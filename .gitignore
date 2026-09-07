@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# System & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PocketBase local runtime logs
+pb_data/auxiliary.db
+pb_data/auxiliary.db-shm
+pb_data/auxiliary.db-wal
+pb_data/data.db-shm
+pb_data/data.db-wal
+pb_data/.notify/

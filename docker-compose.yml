@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  chowtime:
+    image: ghcr.io/davechandev/chowtime:latest # 直接拉取官方云端构建镜像 (或本地构建: build: .)
+    container_name: chowtime
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    volumes:
+      # 持久化挂载菜谱数据与上传的食材图片
+      - ./data:/pb/pb_data
